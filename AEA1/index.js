@@ -1,7 +1,6 @@
-import * as es from "escriure";
-const juan = 20
-const marcos = 40
-const pepe = 103
-const papo = 22
+const escriure = require('./escriure');
 
-es.escribirArchivo('juan', 20)
+let nom = process.argv[2];
+let hores = process.argv[3];
+
+escriure.escribirArchivo(nom, hores)
